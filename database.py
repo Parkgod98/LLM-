@@ -115,6 +115,7 @@ def ImageToBlob(file_path):
         photo_blob = f.read()
     return photo_blob
 
+
 def BlobToImage(blob_data) :
     try:
         # BLOB 데이터를 이미지로 변환
@@ -159,6 +160,7 @@ def RemoveDB(db_path):
 
 
 # p_blob = ImageToBlob('/root/LLM_Bootcamp/LangChain_class/Model_IO/스크린샷 2024-05-14 233747.png')
+
 # BlobToImage(p_blob)
 
 # AddDB("금쪽이현수","네이버","쫄따구","네이버 CLOVA","SW개발","경기 판교 정자","010-5294-2206","hyounshu@kookmin.ac.kr.",p_blob) # 사진 데이터 삽입할때 전처리필요.
