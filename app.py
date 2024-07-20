@@ -9,6 +9,8 @@ import img as info
 
 PLACEHOLDER_IMG_PATH = "/root/LLM_Bootcamp/image/placeholer_img.jpg"
 
+AddDB("홍길동","네이버","사원","네이버 CLOVA","SW개발","경기 판교 정자","010-0000-0000","example@naver.com",PLACEHOLDER_IMG_PATH)
+
 # DB 초기화
 columns = ['id', 'name', 'company', 'position', 'department', 'job_title', 'address', 'phone', 'email', 'photo']
 
