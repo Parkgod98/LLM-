@@ -3,7 +3,7 @@ import os
 from PIL import Image
 import io
 # SQLite 데이터베이스 파일 경로
-PATH_NAME = "ttt.db"
+PATH_NAME = "business_card.db"
 ID = 0
 NAME = 1
 COMPANY = 2
@@ -73,6 +73,30 @@ def PrintDB(db_path = PATH_NAME, table_name = "user_info") :
             
     # 연결 종료
     conn.close()
+    
+def CreateTable(db_path = PATH_NAME, table_name = "user_info") :
+    conn = sqlite3.connect(db_path)
+    
+    # 커서 생성
+    cursor = conn.cursor()
+    
+    # 만약 아직 테이블을 만들지 않았다면 생성.
+    cursor.execute('''CREATE TABLE IF NOT EXISTS user_info (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT, 
+                    company TEXT,
+                    position TEXT,
+                    department TEXT,
+                    job_title TEXT,
+                    address TEXT,
+                    phone TEXT,
+                    email TEXT,
+                    photo BLOB
+                )''')
+    
+    conn.commit()
+    
+    conn.close()
 
 # 데이터 베이스 모든 데이터 얻어내는 함수 format -> [(?),()] list + tuple
 def GetDB(db_path = PATH_NAME, table_name = "user_info") :
@@ -81,6 +105,9 @@ def GetDB(db_path = PATH_NAME, table_name = "user_info") :
     
     # 커서 생성
     cursor = conn.cursor()
+    
+    # 만약 아직 테이블을 만들지 않았다면 생성.
+    CreateTable()
     
     # 데이터 불러오기
     cursor.execute(f"SELECT * FROM {table_name}")

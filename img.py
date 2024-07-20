@@ -1,6 +1,7 @@
 # from dotenv import load_dotenv
 import os
 from openai import AzureOpenAI
+from dotenv import load_dotenv
 import base64
 from mimetypes import guess_type
 
@@ -18,11 +19,11 @@ def local_image_to_data_url(image_path):
     # Construct the data URL
     return f"data:{mime_type};base64,{base64_encoded_data}"
 
-# def Extract_Info(image_path):
-#     load_dotenv()
+def Extract_Info(image_path):
+    load_dotenv()
 
-#     azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT") # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
-#     api_key= os.getenv("AZURE_OPENAI_API_KEY")
+    azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT") # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
+    api_key= os.getenv("AZURE_OPENAI_API_KEY")
     
     api_key = '2374f2c1a634407387e2fb2fbba5e7fe'
     azure_endpoint = 'https://magicecoleai.openai.azure.com/'
