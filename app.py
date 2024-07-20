@@ -9,8 +9,6 @@ import img as info
 
 PLACEHOLDER_IMG_PATH = "placeholer_img.jpg"
 
-db.AddDB("홍길동","네이버","사원","네이버 CLOVA","SW개발","경기 판교 정자","010-0000-0000","example@naver.com",db.ImageToBlob(PLACEHOLDER_IMG_PATH))
-
 # DB 초기화
 columns = ['id', 'name', 'company', 'position', 'department', 'job_title', 'address', 'phone', 'email', 'photo']
 
@@ -97,6 +95,7 @@ def display_upload_page():
 st.title("카드 매니저")
 
 if 'page' not in st.session_state:
+    db.AddDB("홍길동","네이버","사원","네이버 CLOVA","SW개발","경기 판교 정자","010-0000-0000","example@naver.com",db.ImageToBlob(PLACEHOLDER_IMG_PATH))
     st.session_state.page = 'list'
 if 'selected_index' not in st.session_state:
     st.session_state.selected_index = None
