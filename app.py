@@ -9,7 +9,6 @@ import img as info
 
 PLACEHOLDER_IMG_PATH = "/root/LLM_Bootcamp/image/placeholer_img.jpg"
 
-
 # DB 초기화
 columns = ['id', 'name', 'company', 'position', 'department', 'job_title', 'address', 'phone', 'email', 'photo']
 
@@ -96,7 +95,7 @@ def display_upload_page():
 st.title("카드 매니저")
 
 if 'page' not in st.session_state:
-    st.session_state.page = 'upload'
+    st.session_state.page = 'list'
 if 'selected_index' not in st.session_state:
     st.session_state.selected_index = None
     
