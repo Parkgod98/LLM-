@@ -95,7 +95,7 @@ def display_upload_page():
 st.title("카드 매니저")
 
 if 'page' not in st.session_state:
-    db.AddDB("홍길동","네이버","사원","네이버 CLOVA","SW개발","경기 판교 정자","010-0000-0000","example@naver.com",db.ImageToBlob(PLACEHOLDER_IMG_PATH))
+    # db.AddDB("홍길동","네이버","사원","네이버 CLOVA","SW개발","경기 판교 정자","010-0000-0000","example@naver.com",db.ImageToBlob(PLACEHOLDER_IMG_PATH))
     st.session_state.page = 'list'
 if 'selected_index' not in st.session_state:
     st.session_state.selected_index = None
