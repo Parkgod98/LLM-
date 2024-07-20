@@ -6,6 +6,7 @@ import os
 import database as db
 import img as info
 
+db.RemoveDB('tttt.db')
 
 PLACEHOLDER_IMG_PATH = "placeholer_img.jpg"
 
