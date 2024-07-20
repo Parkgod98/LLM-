@@ -7,7 +7,7 @@ import database as db
 import img as info
 
 
-PLACEHOLDER_IMG_PATH = "/root/LLM_Bootcamp/image/placeholer_img.jpg"
+PLACEHOLDER_IMG_PATH = "placeholer_img.jpg"
 
 db.AddDB("홍길동","네이버","사원","네이버 CLOVA","SW개발","경기 판교 정자","010-0000-0000","example@naver.com",PLACEHOLDER_IMG_PATH)
 
