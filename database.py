@@ -163,7 +163,7 @@ def RemoveDB(db_path):
 
 # BlobToImage(p_blob)
 
-# AddDB("금쪽이현수","네이버","쫄따구","네이버 CLOVA","SW개발","경기 판교 정자","010-5294-2206","hyounshu@kookmin.ac.kr.",p_blob) # 사진 데이터 삽입할때 전처리필요.
+# AddDB("금쪽이현수","네이버","쫄따구","네이버 CLOVA","SW개발","경기 판교 정자","010-0000-0000","example@kookmin.ac.kr.",p_blob) # 사진 데이터 삽입할때 전처리필요.
 # PrintDB()
 # ClearDB_Table()
 # PrintDB()
