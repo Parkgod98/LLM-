@@ -96,7 +96,7 @@ def display_upload_page():
 st.title("카드 매니저")
 
 if 'page' not in st.session_state:
-    st.session_state.page = 'list'
+    st.session_state.page = 'upload'
 if 'selected_index' not in st.session_state:
     st.session_state.selected_index = None
     
