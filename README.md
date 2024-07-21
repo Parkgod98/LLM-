@@ -33,4 +33,7 @@ OpenAI API을 통해 다음과 같은 정보를 추출합니다:
 - **프론트엔드**: Streamlit
 - **백엔드**: Python
 - **AI 모델**: GPT-4o API
-- **데이터베이스**: SQLite 
+- **데이터베이스**: SQLite
+
+## UML
+![project2 drawio](https://github.com/user-attachments/assets/ed6e9aac-279e-4e42-b2a4-5f9db8387b1e)
